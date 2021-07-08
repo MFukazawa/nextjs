@@ -3,11 +3,10 @@ import ArticleItem from '../components/ArticleItem';
 
 const ArticleList = ({ articles }) => {
   return (
-    <div>
+    <div className='grid'>
       {articles.map((article) => (
-        <div key={article.title}>{article.title}</div>
+        <ArticleItem article={article} key={article.title} />
       ))}
-      {/* // <ArticleItem article={article} />; */}
     </div>
   );
 };
